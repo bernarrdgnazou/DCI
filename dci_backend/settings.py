@@ -1,14 +1,12 @@
 from pathlib import Path
 from datetime import timedelta
+import dj_database_url
 import os
 
 
-SECURE_SSL_REDIRECT = True  
-SECURE_HSTS_SECONDS = 31536000  # 1 an
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_PRELOAD = True
-SECURE_BROWSER_XSS_FILTER = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
+DATABASES = {
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+}
 
 
 # Chemins de base
@@ -20,10 +18,7 @@ LOGS_DIR = BASE_DIR / 'logs'
 SECRET_KEY = 'django-insecure-@50kx5=5&rp$jm@tz8b)%)8$@-6z7bp!usz#lzjcp+p7xi01-q'
 
 # Mode debug (à désactiver en production)
-DEBUG = True
-
-# Hôtes autorisés (à configurer pour la production)
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+DEBUG = False
 
 # Configuration des applications
 INSTALLED_APPS = [
@@ -77,6 +72,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'api.logging.middleware.RequestLoggingMiddleware',
 
 ]
@@ -199,6 +195,8 @@ USE_TZ = True
 # Fichiers statiques
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Fichiers média
 MEDIA_URL = '/media/'
@@ -310,7 +308,7 @@ CORS_ALLOW_HEADERS = [
 
 
 
-
+ALLOWED_HOSTS = ['dci-api.onrender.com', 'localhost']
 
 
 
