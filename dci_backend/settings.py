@@ -153,7 +153,7 @@ else:
 # Autres configurations spécifiques à Render
 if IS_RENDER:
     DEBUG = False
-    ALLOWED_HOSTS = ['votre-nom-service.onrender.com']
+    ALLOWED_HOSTS = ['dci-api.onrender.com']
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 else:
