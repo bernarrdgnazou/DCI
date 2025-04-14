@@ -1,0 +1,1635 @@
+ERROR 2025-04-10 15:38:10,391 log 11722 140471956567744 Internal Server Error: /api/v1/communes
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:10,875 log 11722 140471956567744 Internal Server Error: /api/v1/communes
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:11,444 log 11722 140471956567744 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:11,788 log 11722 140471956567744 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:33,268 log 11722 140471956567744 Internal Server Error: /admin/api/agent/
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:33,810 log 11722 140471956567744 Internal Server Error: /admin/api/agent/
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:33,936 log 11722 140471948175040 Internal Server Error: /admin/api/agent/
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:34,315 log 11722 140471948175040 Internal Server Error: /admin/api/agent/
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:34,994 log 11722 140471948175040 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:35,213 log 11722 140471948175040 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:39,435 log 11722 140471948175040 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:39,744 log 11722 140471948175040 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:40,341 log 11722 140471948175040 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:40,552 log 11722 140471948175040 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:51,484 log 11722 140471948175040 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:51,717 log 11722 140471948175040 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:52,318 log 11722 140471948175040 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/logging/middleware.py", line 31, in process_request
+    'user_id': getattr(request.user, 'id', None),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-10 15:38:52,567 log 11722 140471948175040 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 102, in __call__
+    return self._postprocess(request, response, toolbar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 138, in _postprocess
+    panel.generate_stats(request, response)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 160, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « django_session » n'existe pas
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+ERROR 2025-04-14 01:03:39,267 log 10531 140316963497664 Internal Server Error: /api/v1/
+ERROR 2025-04-14 01:19:36,799 log 12375 139987840657088 Internal Server Error: /api/v1/
+ERROR 2025-04-14 01:20:03,546 log 12375 139987840657088 Internal Server Error: /api/v1/
+ERROR 2025-04-14 01:20:08,368 log 12375 139987840657088 Internal Server Error: /api/v1/
+ERROR 2025-04-14 01:20:09,526 log 12375 139987840657088 Internal Server Error: /api/v1/
+ERROR 2025-04-14 01:24:25,997 log 12675 139767038863040 Internal Server Error: /api/v1/

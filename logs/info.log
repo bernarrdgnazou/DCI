@@ -1,0 +1,814 @@
+INFO 2025-04-10 15:03:04,831 autoreload 9873 140361644350336 Watching for file changes with StatReloader
+INFO 2025-04-10 15:03:13,070 autoreload 9873 140361644350336 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 15:03:13,506 autoreload 9877 140225614855040 Watching for file changes with StatReloader
+INFO 2025-04-10 15:04:53,440 autoreload 9988 139641014606720 Watching for file changes with StatReloader
+INFO 2025-04-10 15:05:19,307 autoreload 9988 139641014606720 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/exceptions/handlers.py changed, reloading.
+INFO 2025-04-10 15:05:20,136 autoreload 10012 140684184099712 Watching for file changes with StatReloader
+INFO 2025-04-10 15:08:00,053 autoreload 10012 140684184099712 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/urls.py changed, reloading.
+INFO 2025-04-10 15:08:00,867 autoreload 10104 140125091462016 Watching for file changes with StatReloader
+INFO 2025-04-10 15:09:31,293 autoreload 10104 140125091462016 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/exceptions/custom_exceptions.py changed, reloading.
+INFO 2025-04-10 15:09:32,061 autoreload 10249 140575929273216 Watching for file changes with StatReloader
+INFO 2025-04-10 15:09:50,486 autoreload 10249 140575929273216 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/api/urls.py changed, reloading.
+INFO 2025-04-10 15:09:51,334 autoreload 10261 140018892000128 Watching for file changes with StatReloader
+INFO 2025-04-10 15:17:31,745 autoreload 10557 139819746159488 Watching for file changes with StatReloader
+INFO 2025-04-10 15:33:14,498 autoreload 11425 140113450691456 Watching for file changes with StatReloader
+INFO 2025-04-10 15:38:02,156 autoreload 11722 140472061283200 Watching for file changes with StatReloader
+ERROR 2025-04-10 15:38:10,895 basehttp 11722 140471956567744 "GET /api/v1/communes HTTP/1.1" 500 174098
+ERROR 2025-04-10 15:38:11,808 basehttp 11722 140471956567744 "GET /favicon.ico HTTP/1.1" 500 172482
+ERROR 2025-04-10 15:38:34,336 basehttp 11722 140471948175040 "GET /admin/api/agent/ HTTP/1.1" 500 174271
+ERROR 2025-04-10 15:38:35,232 basehttp 11722 140471948175040 "GET /favicon.ico HTTP/1.1" 500 172483
+ERROR 2025-04-10 15:38:39,767 basehttp 11722 140471948175040 "GET / HTTP/1.1" 500 172542
+ERROR 2025-04-10 15:38:40,571 basehttp 11722 140471948175040 "GET /favicon.ico HTTP/1.1" 500 172467
+ERROR 2025-04-10 15:38:51,736 basehttp 11722 140471948175040 "GET /admin/ HTTP/1.1" 500 173754
+ERROR 2025-04-10 15:38:52,587 basehttp 11722 140471948175040 "GET /favicon.ico HTTP/1.1" 500 172473
+INFO 2025-04-10 15:48:52,606 autoreload 12527 140462573759360 Watching for file changes with StatReloader
+INFO 2025-04-10 15:49:18,992 autoreload 12565 139649181223808 Watching for file changes with StatReloader
+INFO 2025-04-10 15:49:28,818 basehttp 12565 139649078163136 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-04-10 15:49:29,239 basehttp 12565 139649078163136 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 18301
+WARNING 2025-04-10 15:49:29,617 basehttp 12565 139649078163136 "GET /favicon.ico HTTP/1.1" 404 17026
+INFO 2025-04-10 15:49:32,671 basehttp 12565 139649078163136 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 18538
+INFO 2025-04-10 15:50:20,717 autoreload 12679 140717524446080 Watching for file changes with StatReloader
+INFO 2025-04-10 15:50:28,657 basehttp 12679 140717351499456 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-04-10 15:50:28,998 basehttp 12679 140717351499456 "GET /admin/ HTTP/1.1" 200 25831
+INFO 2025-04-10 15:50:29,083 basehttp 12679 140717351499456 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-04-10 15:50:32,874 basehttp 12679 140717351499456 "GET /admin/api/agent/ HTTP/1.1" 200 27717
+INFO 2025-04-10 15:50:33,077 basehttp 12679 140717351499456 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 15:50:35,073 basehttp 12679 140717351499456 "GET /admin/api/demande/ HTTP/1.1" 200 28131
+INFO 2025-04-10 15:50:35,221 basehttp 12679 140717351499456 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 15:50:36,631 basehttp 12679 140717351499456 "GET /admin/api/enregistrement/ HTTP/1.1" 200 27768
+INFO 2025-04-10 15:50:36,778 basehttp 12679 140717351499456 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 15:50:38,248 basehttp 12679 140717351499456 "GET /admin/api/journal/ HTTP/1.1" 200 28081
+INFO 2025-04-10 15:50:38,392 basehttp 12679 140717351499456 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 15:50:41,930 basehttp 12679 140717351499456 "GET /admin/api/utilisateur/ HTTP/1.1" 200 32679
+INFO 2025-04-10 15:50:42,089 basehttp 12679 140717351499456 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 15:50:51,631 basehttp 12679 140717351499456 "GET /admin/api/journal/ HTTP/1.1" 200 28081
+INFO 2025-04-10 15:50:51,776 basehttp 12679 140717351499456 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 15:50:53,989 basehttp 12679 140717351499456 "GET /admin/admin/logentry/ HTTP/1.1" 200 28290
+INFO 2025-04-10 15:50:54,140 basehttp 12679 140717351499456 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 15:51:06,681 basehttp 12679 140717351499456 "GET /api/v1/communes HTTP/1.1" 200 23081
+INFO 2025-04-10 15:51:06,755 basehttp 12679 140717351499456 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,758 basehttp 12679 140717351499456 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,763 basehttp 12679 140717304305344 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,764 basehttp 12679 140717343106752 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,770 basehttp 12679 140717078865600 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,773 basehttp 12679 140717087258304 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,785 basehttp 12679 140717343106752 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,786 basehttp 12679 140717304305344 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,786 basehttp 12679 140717078865600 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,793 basehttp 12679 140717087258304 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,794 basehttp 12679 140717070472896 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,852 basehttp 12679 140717087258304 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:06,882 basehttp 12679 140717078865600 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+INFO 2025-04-10 15:51:09,577 basehttp 12679 140717087258304 "GET /api/v1/ HTTP/1.1" 200 21139
+WARNING 2025-04-10 15:51:12,066 handlers 12679 140717087258304 Permission denied in UtilisateurViewSet: Cette action est réservée aux administrateurs.
+WARNING 2025-04-10 15:51:12,141 basehttp 12679 140717087258304 "GET /api/v1/utilisateurs HTTP/1.1" 403 19958
+INFO 2025-04-10 15:51:43,140 basehttp 12679 140717087258304 "GET /api/v1/ HTTP/1.1" 200 21141
+WARNING 2025-04-10 15:51:45,316 handlers 12679 140717087258304 Permission denied in AgentViewSet: Cette action est réservée aux administrateurs.
+WARNING 2025-04-10 15:51:45,378 basehttp 12679 140717087258304 "GET /api/v1/agents HTTP/1.1" 403 19868
+INFO 2025-04-10 15:51:48,516 basehttp 12679 140717087258304 "GET /api/v1/ HTTP/1.1" 200 21139
+INFO 2025-04-10 15:51:53,134 basehttp 12679 140717087258304 "GET /api/v1/paiements HTTP/1.1" 200 26505
+INFO 2025-04-10 15:51:56,139 basehttp 12679 140717087258304 "GET /api/v1/ HTTP/1.1" 200 21140
+INFO 2025-04-10 15:51:59,883 basehttp 12679 140717087258304 "GET /api/v1/notifications HTTP/1.1" 200 21996
+INFO 2025-04-10 15:52:03,685 basehttp 12679 140717087258304 "GET /api/v1/ HTTP/1.1" 200 21140
+WARNING 2025-04-10 15:52:06,539 handlers 12679 140717087258304 Permission denied in JournalViewSet: Vous ne pouvez consulter que les journaux liés à votre commune.
+WARNING 2025-04-10 15:52:06,611 basehttp 12679 140717087258304 "GET /api/v1/journal HTTP/1.1" 403 19901
+INFO 2025-04-10 15:52:12,245 basehttp 12679 140717087258304 "GET /api/v1/ HTTP/1.1" 200 21141
+INFO 2025-04-10 15:52:16,907 basehttp 12679 140717087258304 "GET /api/v1/enregistrements HTTP/1.1" 200 22159
+INFO 2025-04-10 15:52:22,208 basehttp 12679 140717087258304 "GET /api/v1/ HTTP/1.1" 200 21141
+INFO 2025-04-10 15:52:25,484 basehttp 12679 140717087258304 "GET /api/v1/communes HTTP/1.1" 200 23081
+INFO 2025-04-10 16:02:03,478 basehttp 12679 140717087258304 "GET /api/v1/communes/by_region HTTP/1.1" 200 22973
+INFO 2025-04-10 16:02:08,476 basehttp 12679 140717087258304 "GET /api/v1/communes/regions HTTP/1.1" 200 22929
+INFO 2025-04-10 16:02:18,506 basehttp 12679 140717087258304 "GET /api/v1/communes/regions?ordering=region HTTP/1.1" 200 23155
+INFO 2025-04-10 16:02:21,211 basehttp 12679 140717087258304 "OPTIONS /api/v1/communes/regions?ordering=region HTTP/1.1" 200 21331
+INFO 2025-04-10 16:02:21,439 basehttp 12679 140717087258304 "GET /__debug__/history_sidebar/?store_id=1894149df5c641568e932ce378e322ac HTTP/1.1" 200 10997
+INFO 2025-04-10 16:02:25,110 basehttp 12679 140717087258304 "OPTIONS /api/v1/communes/regions?ordering=region HTTP/1.1" 200 21331
+INFO 2025-04-10 16:02:25,338 basehttp 12679 140717087258304 "GET /__debug__/history_sidebar/?store_id=c86cea1a5f3e44318f53bca98bc49a61 HTTP/1.1" 200 10997
+INFO 2025-04-10 16:02:25,377 basehttp 12679 140717343106752 "GET /__debug__/history_sidebar/?store_id=c86cea1a5f3e44318f53bca98bc49a61 HTTP/1.1" 200 10997
+INFO 2025-04-10 16:02:27,810 basehttp 12679 140717343106752 "GET /api/v1/communes HTTP/1.1" 200 23081
+INFO 2025-04-10 16:02:30,549 basehttp 12679 140717343106752 "OPTIONS /api/v1/communes HTTP/1.1" 200 24412
+INFO 2025-04-10 16:02:30,783 basehttp 12679 140717343106752 "GET /__debug__/history_sidebar/?store_id=f01cfc6cb1c94c0b8f65388e529c694e HTTP/1.1" 200 10972
+INFO 2025-04-10 16:02:34,909 basehttp 12679 140717343106752 "GET /api/v1/ HTTP/1.1" 200 21139
+INFO 2025-04-10 16:13:18,467 basehttp 12679 140717343106752 "GET /api/v1/rejets HTTP/1.1" 200 21891
+INFO 2025-04-10 16:13:53,225 basehttp 12679 140717343106752 "GET /admin/api/journal/ HTTP/1.1" 200 28081
+INFO 2025-04-10 16:13:53,421 basehttp 12679 140717343106752 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 16:13:55,380 basehttp 12679 140717343106752 "GET /admin/api/journal/add/ HTTP/1.1" 200 33476
+INFO 2025-04-10 16:13:55,536 basehttp 12679 140717343106752 "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+INFO 2025-04-10 16:33:02,708 autoreload 12679 140717524446080 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 16:33:03,666 autoreload 14955 140114513636224 Watching for file changes with StatReloader
+INFO 2025-04-10 16:33:44,641 autoreload 14955 140114513636224 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 16:33:45,478 autoreload 14967 139911230839680 Watching for file changes with StatReloader
+INFO 2025-04-10 16:35:06,352 autoreload 14967 139911230839680 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 16:35:07,038 autoreload 15054 140027679562624 Watching for file changes with StatReloader
+INFO 2025-04-10 16:36:47,454 autoreload 15054 140027679562624 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 16:36:48,177 autoreload 15078 140618457234304 Watching for file changes with StatReloader
+INFO 2025-04-10 16:36:58,133 autoreload 15078 140618457234304 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 16:36:58,969 autoreload 15082 140066218486656 Watching for file changes with StatReloader
+INFO 2025-04-10 16:37:59,469 autoreload 15082 140066218486656 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 16:38:00,137 autoreload 15137 140051456572288 Watching for file changes with StatReloader
+INFO 2025-04-10 17:19:23,584 autoreload 18291 140333538466688 Watching for file changes with StatReloader
+INFO 2025-04-10 17:21:40,391 autoreload 18535 139921202465664 Watching for file changes with StatReloader
+INFO 2025-04-10 17:21:55,985 autoreload 18535 139921202465664 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 17:21:56,623 autoreload 18544 140372977367936 Watching for file changes with StatReloader
+INFO 2025-04-10 17:22:12,273 autoreload 18544 140372977367936 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 17:22:12,898 autoreload 18582 140107461352320 Watching for file changes with StatReloader
+INFO 2025-04-10 17:26:18,429 autoreload 18806 140133203991424 Watching for file changes with StatReloader
+INFO 2025-04-10 17:28:13,171 autoreload 18806 140133203991424 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-10 17:28:14,182 autoreload 18866 140517537758080 Watching for file changes with StatReloader
+INFO 2025-04-10 17:28:22,185 autoreload 18889 140492342639488 Watching for file changes with StatReloader
+INFO 2025-04-10 17:28:32,905 basehttp 18889 140492232816320 "GET / HTTP/1.1" 301 0
+INFO 2025-04-10 17:28:32,930 basehttp 18889 140492232816320 code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063úú\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-04-10 17:28:32,931 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:28:32,933 basehttp 18889 140492232816320 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-04-10 17:28:32,934 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:28:34,421 basehttp 18889 140492232816320 code 400, message Bad request version ('\x94-Q')
+ERROR 2025-04-10 17:28:34,422 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:28:34,425 basehttp 18889 140492232816320 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-04-10 17:28:34,426 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:28:34,429 basehttp 18889 140492216030912 code 400, message Bad request version ("`L8´Q\x1aULgc-Æ\x7f'\x8d½\x15º")
+ERROR 2025-04-10 17:28:34,430 basehttp 18889 140492216030912 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:28:34,433 basehttp 18889 140492216030912 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-04-10 17:28:34,433 basehttp 18889 140492216030912 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:29:49,281 basehttp 18889 140492232816320 code 400, message Bad request version ('ââÊì{\\GD\x81áGuä\x9c\x95\x19h\x001Ö\x94ÖÓp¶(}~\x07-w[½(wLÕ#\x946qU(:c\x8cÈ\x01\x0f\x89\x08\x0e\x05s°ÛEOk¡ºö\x1bÍXX½')
+ERROR 2025-04-10 17:29:49,281 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:29:49,284 basehttp 18889 140492232816320 code 400, message Bad request version ('\x17aP&\x84\x88¨¦ÄÆ¼å¹±n')
+ERROR 2025-04-10 17:29:49,285 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:30:01,489 basehttp 18889 140492232816320 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-04-10 17:30:01,491 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-10 17:30:01,495 basehttp 18889 140492232816320 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-04-10 17:30:01,496 basehttp 18889 140492232816320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-13 22:46:27,096 autoreload 5839 140715955649408 Watching for file changes with StatReloader
+INFO 2025-04-13 22:46:49,944 autoreload 5878 140534452177792 Watching for file changes with StatReloader
+INFO 2025-04-13 22:48:47,970 basehttp 5878 140534274422464 "GET /admin/ HTTP/1.1" 301 0
+INFO 2025-04-13 22:48:47,975 basehttp 5878 140534274422464 code 400, message Bad request version ("'\x05Gò¬\x94\x14G\x89ÜýV0Î¢\x94\x9bÅl\x91\x88\x99\x00")
+ERROR 2025-04-13 22:48:47,975 basehttp 5878 140534274422464 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-13 22:48:47,978 basehttp 5878 140534274422464 code 400, message Bad request version ('\x8aþ')
+ERROR 2025-04-13 22:48:47,979 basehttp 5878 140534274422464 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:39,420 basehttp 5878 140534266029760 code 400, message Bad request version (";\x9aºð'Çßi¹ü¤")
+ERROR 2025-04-14 00:06:39,421 basehttp 5878 140534266029760 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:39,427 basehttp 5878 140534266029760 code 400, message Bad request version ('K\x8b\x0f:æª\x16A')
+ERROR 2025-04-14 00:06:39,428 basehttp 5878 140534266029760 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:39,439 basehttp 5878 140534274422464 code 400, message Bad request version ('k|\x8aFI\xad×Ã\x94U\x18Î\x9eØ¤\x8e\x18\x93®ÔµÅô\x18ÝÙ')
+ERROR 2025-04-14 00:06:39,439 basehttp 5878 140534274422464 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:39,443 basehttp 5878 140534274422464 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-04-14 00:06:39,445 basehttp 5878 140534274422464 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:39,444 basehttp 5878 140534257637056 code 400, message Bad request version ('\x06&\x82±À\x02Ç\x16\x11')
+ERROR 2025-04-14 00:06:39,446 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:39,452 basehttp 5878 140534257637056 code 400, message Bad request version ('Å¶$')
+ERROR 2025-04-14 00:06:39,453 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:40,771 basehttp 5878 140534257637056 code 400, message Bad request version ('\x00°å$ÒFé¡î¸\x81\x13WôIù-bmÇÉ')
+ERROR 2025-04-14 00:06:40,771 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:40,774 basehttp 5878 140534257637056 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ÊÊ\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00#\x00\x00\x00')
+ERROR 2025-04-14 00:06:40,777 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:40,783 basehttp 5878 140534257637056 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S::\x00\x00\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00')
+ERROR 2025-04-14 00:06:40,784 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:40,785 basehttp 5878 140534274422464 code 400, message Bad request version ('%7X8DFp')
+ERROR 2025-04-14 00:06:40,787 basehttp 5878 140534274422464 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:40,789 basehttp 5878 140534249244352 code 400, message Bad request version ("\x02h2\x08http/1.1\x00-\x00\x02\x01\x01\x003\x04ï\x04íêê\x00\x01\x00\x11ì\x04ÀzV·û\x14\x94¤\x83\x01\x90'b\x8aÇ®y\x03L\x17ã¦\x84ç")
+ERROR 2025-04-14 00:06:40,793 basehttp 5878 140534249244352 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:40,792 basehttp 5878 140534257637056 code 400, message Bad request version ('4G¼H\x9dø')
+ERROR 2025-04-14 00:06:40,797 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:41,514 basehttp 5878 140534257637056 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00')
+ERROR 2025-04-14 00:06:41,515 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:41,522 basehttp 5878 140534257637056 code 400, message Bad request version ('w\x04Ö¦òòlo\x8a\x0erlN\xadhAC\x80\x90')
+ERROR 2025-04-14 00:06:41,523 basehttp 5878 140534257637056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:41,523 basehttp 5878 140534249244352 code 400, message Bad request version ('Ò\x87ëàÖvÇÉN')
+ERROR 2025-04-14 00:06:41,524 basehttp 5878 140534249244352 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:06:41,528 basehttp 5878 140534249244352 code 400, message Bad request version ('Q®{ê²IgL¿{ÌÁ¸-ë÷mø«')
+ERROR 2025-04-14 00:06:41,528 basehttp 5878 140534249244352 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:22,633 autoreload 8121 139849150962560 Watching for file changes with StatReloader
+INFO 2025-04-14 00:12:26,951 basehttp 8121 139848966993600 code 400, message Bad request version ('¡5h¶FÅ\x01ËºÜl\x80"ÁýÕx«¡0')
+ERROR 2025-04-14 00:12:26,952 basehttp 8121 139848966993600 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:26,957 basehttp 8121 139848966993600 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03¼ebV\x87î\x1b')
+ERROR 2025-04-14 00:12:26,958 basehttp 8121 139848966993600 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:26,967 basehttp 8121 139848958600896 code 400, message Bad request version ('u´\x9ct)©:O#\x94[')
+ERROR 2025-04-14 00:12:26,968 basehttp 8121 139848958600896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:26,969 basehttp 8121 139848950208192 code 400, message Bad request version ('5¿\x00')
+ERROR 2025-04-14 00:12:26,970 basehttp 8121 139848950208192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:26,972 basehttp 8121 139848958600896 code 400, message Bad request version ('.8¼\x82\x80NÏ¯\x0em+Vu{j|&ì8')
+ERROR 2025-04-14 00:12:26,975 basehttp 8121 139848958600896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:26,973 basehttp 8121 139848950208192 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01Di\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-04-14 00:12:26,975 basehttp 8121 139848950208192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:28,942 basehttp 8121 139848958600896 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03kCSÓÕþ¹!eUÑ\x9aAð')
+ERROR 2025-04-14 00:12:28,943 basehttp 8121 139848958600896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:28,946 basehttp 8121 139848958600896 code 400, message Bad request version ('èè')
+ERROR 2025-04-14 00:12:28,947 basehttp 8121 139848958600896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:28,951 basehttp 8121 139848958600896 code 400, message Bad request version ('Â³\x06')
+ERROR 2025-04-14 00:12:28,953 basehttp 8121 139848958600896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:28,953 basehttp 8121 139848950208192 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-04-14 00:12:28,955 basehttp 8121 139848950208192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:28,960 basehttp 8121 139848958600896 code 400, message Bad request version ('èü\x02\x04rÀ\xadR\x93,[')
+ERROR 2025-04-14 00:12:28,964 basehttp 8121 139848958600896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:28,964 basehttp 8121 139848950208192 code 400, message Bad request version ('ÂçUAÑV\x0f\x13\x17')
+ERROR 2025-04-14 00:12:28,965 basehttp 8121 139848950208192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:39,232 basehttp 8121 139848950208192 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-04-14 00:12:39,233 basehttp 8121 139848950208192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:39,236 basehttp 8121 139848950208192 code 400, message Bad request version ('\x06^üCf\x89#¤ö')
+ERROR 2025-04-14 00:12:39,237 basehttp 8121 139848950208192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:12:45,284 autoreload 8121 139849150962560 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:12:46,035 autoreload 8174 140710272985984 Watching for file changes with StatReloader
+INFO 2025-04-14 00:13:02,409 autoreload 8174 140710272985984 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:13:03,332 autoreload 8179 139964446247808 Watching for file changes with StatReloader
+INFO 2025-04-14 00:13:05,544 basehttp 8179 139964337714880 code 400, message Bad request version ('9ké£\x1b\x12ã©}AFa!\x9d¿X\x9eñ;´õ»\x98÷ºSùFy3³µ\\xHîä\x1b\x9bá\x80)7')
+ERROR 2025-04-14 00:13:05,544 basehttp 8179 139964337714880 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:13:05,553 basehttp 8179 139964260021952 code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ºº\x00\x00ÿ\x01\x00\x01\x00\x00')
+INFO 2025-04-14 00:13:05,554 basehttp 8179 139964251629248 code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sÊÊ\x00\x00\x00')
+ERROR 2025-04-14 00:13:05,554 basehttp 8179 139964251629248 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-04-14 00:13:05,554 basehttp 8179 139964260021952 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:13:05,558 basehttp 8179 139964251629248 code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-04-14 00:13:05,558 basehttp 8179 139964251629248 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:13:12,453 autoreload 8179 139964446247808 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:13:13,253 autoreload 8199 140459887803264 Watching for file changes with StatReloader
+INFO 2025-04-14 00:15:40,737 autoreload 8199 140459887803264 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:15:41,437 autoreload 8295 139985438530432 Watching for file changes with StatReloader
+INFO 2025-04-14 00:16:07,150 autoreload 8295 139985438530432 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:16:07,850 autoreload 8300 139628966357888 Watching for file changes with StatReloader
+INFO 2025-04-14 00:16:21,772 basehttp 8300 139628782810816 code 400, message Bad request version ('¢rÁå÷Â·')
+ERROR 2025-04-14 00:16:21,772 basehttp 8300 139628782810816 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:16:21,775 basehttp 8300 139628782810816 code 400, message Bad request version ('Å\x96\x82Ôküb_\x8f9ó4\x06\x14\x89·:pk')
+ERROR 2025-04-14 00:16:21,775 basehttp 8300 139628782810816 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:16:21,782 basehttp 8300 139628774418112 code 400, message Bad request version ('*FøR<0¯ì\x95\x88@ç\x11y{/ÏQz\x9ak\x96Ù1.¼u\x0f\x0f8È£\x02Â\x11Â')
+ERROR 2025-04-14 00:16:21,783 basehttp 8300 139628774418112 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:16:21,784 basehttp 8300 139628766025408 code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-04-14 00:16:21,785 basehttp 8300 139628766025408 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:16:21,788 basehttp 8300 139628774418112 code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x8a\x8a\x00\x00\x00')
+ERROR 2025-04-14 00:16:21,790 basehttp 8300 139628774418112 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:16:21,793 basehttp 8300 139628766025408 code 400, message Bad request version ('pÑ')
+ERROR 2025-04-14 00:16:21,794 basehttp 8300 139628766025408 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:17:27,654 autoreload 8300 139628966357888 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:17:28,484 autoreload 8446 139812081167232 Watching for file changes with StatReloader
+INFO 2025-04-14 00:19:44,404 autoreload 8620 140587370916736 Watching for file changes with StatReloader
+INFO 2025-04-14 00:19:51,778 basehttp 8620 140587261064896 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x9bwÎ')
+ERROR 2025-04-14 00:19:51,781 basehttp 8620 140587261064896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:51,784 basehttp 8620 140587261064896 code 400, message Bad request version ('¡¸')
+ERROR 2025-04-14 00:19:51,785 basehttp 8620 140587261064896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:51,790 basehttp 8620 140587252672192 code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ºº\x00\x00\x00')
+ERROR 2025-04-14 00:19:51,791 basehttp 8620 140587252672192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:51,796 basehttp 8620 140587244279488 code 400, message Bad request version ('iÒÙ7X¤¸ËÖ\x18Ó')
+ERROR 2025-04-14 00:19:51,796 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:51,797 basehttp 8620 140587252672192 code 400, message Bad request version ('.³-\x99@Ü2;ÝÙÊ©bñ\x81ªyà\x89¢w¢\x06£\x069ÿq\x8b\x9a\x91Gy.\x9e\x06\x0e[.H\x801Y')
+ERROR 2025-04-14 00:19:51,798 basehttp 8620 140587252672192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:51,799 basehttp 8620 140587244279488 code 400, message Bad request version ('ÒÎ\x00')
+ERROR 2025-04-14 00:19:51,800 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:53,251 basehttp 8620 140587244279488 code 400, message Bad request version ('!b\x9eZl£Ò\x11\x053Î²\x9aSÍª')
+ERROR 2025-04-14 00:19:53,251 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:53,258 basehttp 8620 140587244279488 code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Súú\x00\x00\x00')
+ERROR 2025-04-14 00:19:53,259 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:53,260 basehttp 8620 140587244279488 code 400, message Bad request version ('ÓçZ|\\\x13£\x91\x9cBZ')
+ERROR 2025-04-14 00:19:53,260 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:53,263 basehttp 8620 140587244279488 code 400, message Bad request version ('¶\x1aA¦\x83¹ÙD]\x0fÁ+I\x87\x9a')
+ERROR 2025-04-14 00:19:53,264 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:55,418 basehttp 8620 140587244279488 code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03É\x99Lªà\x17\x82X\x03nÛÌñ')
+ERROR 2025-04-14 00:19:55,418 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:55,425 basehttp 8620 140587244279488 code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063::\x00\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-04-14 00:19:55,425 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:55,430 basehttp 8620 140587244279488 code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SJJ\x00\x00\x00#\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-04-14 00:19:55,431 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:55,432 basehttp 8620 140587252672192 code 400, message Bad request version ('¨.')
+ERROR 2025-04-14 00:19:55,435 basehttp 8620 140587252672192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:55,438 basehttp 8620 140587252672192 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03\x8c\x87Ýi\x91\x7fuã<6Zdç<\x0e')
+ERROR 2025-04-14 00:19:55,439 basehttp 8620 140587252672192 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:19:55,441 basehttp 8620 140587244279488 code 400, message Bad request version ('\x17á')
+ERROR 2025-04-14 00:19:55,442 basehttp 8620 140587244279488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:21:37,763 autoreload 8620 140587370916736 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:21:38,599 autoreload 8711 140328974867328 Watching for file changes with StatReloader
+INFO 2025-04-14 00:21:41,241 basehttp 8711 140328795371200 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-04-14 00:21:41,241 basehttp 8711 140328795371200 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:21:41,245 basehttp 8711 140328795371200 code 400, message Bad request version ('d¦¸õ,eÈ)\xadr¶\x9e(')
+ERROR 2025-04-14 00:21:41,246 basehttp 8711 140328795371200 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:21:41,252 basehttp 8711 140328786978496 code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-04-14 00:21:41,253 basehttp 8711 140328786978496 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:21:41,254 basehttp 8711 140328778585792 code 400, message Bad request version ('Îp-^ôå')
+ERROR 2025-04-14 00:21:41,255 basehttp 8711 140328778585792 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:21:41,255 basehttp 8711 140328786978496 code 400, message Bad request version ('Ô7ÒÚÙ\x89O¸|Ì\x82\x01È\x00')
+ERROR 2025-04-14 00:21:41,258 basehttp 8711 140328786978496 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:21:41,258 basehttp 8711 140328770193088 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063JJ\x00\x00Di\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x00')
+ERROR 2025-04-14 00:21:41,260 basehttp 8711 140328770193088 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:21:46,797 autoreload 8711 140328974867328 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:21:47,519 autoreload 8753 140700596829056 Watching for file changes with StatReloader
+INFO 2025-04-14 00:22:01,735 autoreload 8753 140700596829056 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:22:02,648 autoreload 8757 139748949007232 Watching for file changes with StatReloader
+INFO 2025-04-14 00:22:04,757 basehttp 8757 139748773459648 code 400, message Bad request version ('\x11r%\x9e\x01s\x91è/?Tµx\x05)W\x91¬ª\x84PØÒ\x92W\x89L×\\fÆ·')
+ERROR 2025-04-14 00:22:04,758 basehttp 8757 139748773459648 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:04,762 basehttp 8757 139748773459648 code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x9a\x9a\x00\x00\x00')
+ERROR 2025-04-14 00:22:04,763 basehttp 8757 139748773459648 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:04,770 basehttp 8757 139748765066944 code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sºº\x00\x00\x00#\x00\x00\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-04-14 00:22:04,771 basehttp 8757 139748765066944 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:04,771 basehttp 8757 139748756674240 code 400, message Bad request version ('bg£¶\x9eg\x83\x14\x7f\x97\x7fU.¶h¾Í=ÅÌä¯¦§Ãv')
+ERROR 2025-04-14 00:22:04,773 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:04,776 basehttp 8757 139748756674240 code 400, message Bad request version ('\x00\x02\x01\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00#\x00\x00Di\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-04-14 00:22:04,778 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:04,777 basehttp 8757 139748765066944 code 400, message Bad request version (';j»\x7f|¦¶\x05\x8b;\x14OÎ\x14[\x11\x04\x91t\x18\x89')
+ERROR 2025-04-14 00:22:04,779 basehttp 8757 139748765066944 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,393 basehttp 8757 139748765066944 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03óî¨A«Aév»`')
+ERROR 2025-04-14 00:22:06,394 basehttp 8757 139748765066944 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,399 basehttp 8757 139748765066944 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Ê\x99Hk')
+ERROR 2025-04-14 00:22:06,400 basehttp 8757 139748765066944 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,417 basehttp 8757 139748765066944 code 400, message Bad request version ('Tô{ÈÛcÏ9\x9fC\x16ÉIP³ªâ[e\x84')
+ERROR 2025-04-14 00:22:06,417 basehttp 8757 139748765066944 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,420 basehttp 8757 139748756674240 code 400, message Bad request version ('KW\x00\x87yÖ\x97L6\x8c\x0f\x96n¿Ù1\x89\x11XbF\x95h\x92`@\x8c$k\x8aCo°:×\x86A\x10f\x95')
+ERROR 2025-04-14 00:22:06,423 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,426 basehttp 8757 139748748281536 code 400, message Bad request version ('\x7f²\x064]Î\x9b\x86üD÷7ËPj\x9d2t\x00')
+ERROR 2025-04-14 00:22:06,426 basehttp 8757 139748748281536 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,427 basehttp 8757 139748756674240 code 400, message Bad request version ('\x9aá\x02²P\x107óX*\x16µÉ!')
+ERROR 2025-04-14 00:22:06,429 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,657 basehttp 8757 139748756674240 code 400, message Bad request version ('öuê\x86\x03äÐ2\x93¬Z¼a¡\x1aû4\x05È¼ä:#-\x08,öJr\x12·Y\x7f')
+ERROR 2025-04-14 00:22:06,658 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,662 basehttp 8757 139748756674240 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00Di\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00#\x00\x00\x00')
+ERROR 2025-04-14 00:22:06,663 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,667 basehttp 8757 139748756674240 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-04-14 00:22:06,668 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,668 basehttp 8757 139748748281536 code 400, message Bad request version ('\x82\x18«5´\x99@~\x8a7á*\x9aÃ%Qá¦Â`lm\x8aÛ¹')
+ERROR 2025-04-14 00:22:06,670 basehttp 8757 139748748281536 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,673 basehttp 8757 139748756674240 code 400, message Bad request version ('\x05DÎ\x1añ¨')
+ERROR 2025-04-14 00:22:06,673 basehttp 8757 139748756674240 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:06,681 basehttp 8757 139748748281536 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03²&èC')
+ERROR 2025-04-14 00:22:06,681 basehttp 8757 139748748281536 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:22:12,765 autoreload 8757 139748949007232 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:22:13,596 autoreload 8840 140549534174080 Watching for file changes with StatReloader
+INFO 2025-04-14 00:23:42,996 autoreload 8840 140549534174080 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 00:23:43,780 autoreload 8856 139853758311296 Watching for file changes with StatReloader
+INFO 2025-04-14 00:54:14,672 basehttp 8856 139853650032320 code 400, message Bad request version ("X¾\x9fÜ/ïBµ\x19É\x7fÖ'¸¿\x81\x02\x86k!Ü¤{")
+ERROR 2025-04-14 00:54:14,674 basehttp 8856 139853650032320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:14,680 basehttp 8856 139853650032320 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-04-14 00:54:14,680 basehttp 8856 139853650032320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:14,687 basehttp 8856 139853650032320 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S::\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x00\x17\x00\x00\x003\x04ï\x04í')
+ERROR 2025-04-14 00:54:14,687 basehttp 8856 139853650032320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:14,688 basehttp 8856 139853650032320 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\x8a\x8a\x00\x00\x00\x17\x00\x00\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-04-14 00:54:14,689 basehttp 8856 139853650032320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:14,691 basehttp 8856 139853633246912 code 400, message Bad request version ('\x00\x02\x01\x00Di\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04í')
+ERROR 2025-04-14 00:54:14,691 basehttp 8856 139853633246912 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:14,693 basehttp 8856 139853650032320 code 400, message Bad request version ('\x13õ\x8dÞ÷`rcÅm\x18\x97í«')
+ERROR 2025-04-14 00:54:14,695 basehttp 8856 139853650032320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:15,603 basehttp 8856 139853650032320 code 400, message Bad request version ('\x83')
+ERROR 2025-04-14 00:54:15,604 basehttp 8856 139853650032320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:15,608 basehttp 8856 139853650032320 code 400, message Bad request version ('ºk8|nt²%\x18\x81\xad×k\x04j7Ç\x10\x8a')
+ERROR 2025-04-14 00:54:15,608 basehttp 8856 139853650032320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:15,612 basehttp 8856 139853633246912 code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-04-14 00:54:15,612 basehttp 8856 139853633246912 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 00:54:15,614 basehttp 8856 139853633246912 code 400, message Bad request version ('î0.xüI0yq\x88\x13+Ñ')
+ERROR 2025-04-14 00:54:15,615 basehttp 8856 139853633246912 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-04-14 01:03:39,150 handlers 10531 140316963497664 Unhandled exception in APIRootView: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 151, in _record_call
+    value = original_method(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+WARNING 2025-04-14 01:17:38,886 handlers 11891 140586842842816 Authentication failed in APIRootView: Informations d'authentification non fournies.
+ERROR 2025-04-14 01:19:36,706 handlers 12375 139987840657088 Unhandled exception in APIRootView: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 151, in _record_call
+    value = original_method(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+WARNING 2025-04-14 01:19:55,313 handlers 12375 139987840657088 Authentication failed in APIRootView: Informations d'authentification non fournies.
+ERROR 2025-04-14 01:20:03,516 handlers 12375 139987840657088 Unhandled exception in APIRootView: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 151, in _record_call
+    value = original_method(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2025-04-14 01:20:08,332 handlers 12375 139987840657088 Unhandled exception in APIRootView: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 151, in _record_call
+    value = original_method(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2025-04-14 01:20:09,493 handlers 12375 139987840657088 Unhandled exception in APIRootView: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 151, in _record_call
+    value = original_method(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2025-04-14 01:24:25,910 handlers 12675 139767038863040 Unhandled exception in APIRootView: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 151, in _record_call
+    value = original_method(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/.env/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+WARNING 2025-04-14 01:30:26,978 handlers 12875 140320673359552 Permission denied in UtilisateurViewSet: Cette action est réservée aux administrateurs.
+WARNING 2025-04-14 01:30:44,952 handlers 12875 140320673359552 Permission denied in JournalViewSet: Vous ne pouvez consulter que les journaux liés à votre commune.
+WARNING 2025-04-14 01:31:19,620 handlers 12875 140320641889984 Permission denied in JournalViewSet: Vous ne pouvez consulter que les journaux liés à votre commune.
+INFO 2025-04-14 01:35:25,264 autoreload 13573 140094110768000 Watching for file changes with StatReloader
+INFO 2025-04-14 01:35:37,679 basehttp 13573 140094002525888 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x07Bzz\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-04-14 01:35:37,680 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:37,681 basehttp 13573 140094002525888 code 400, message Bad request version ('D\x02\x82É¶¦¥yjä\x9cMö\x83\x82Û+\x86¥B¤$\x12n*\x90}b3n¥)bacryå¯1A/&¤Á?ì\x8a\x91ø\x8aÇ¬½`\x08>\x9c©xù7\x19ÆØ%Êã¡Q\x86o´@\x9dgµ\x9c\x8abN\x12¶#8¼qÄ\x13K¢<©oy¥»ôC\x05')
+ERROR 2025-04-14 01:35:37,682 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:37,682 basehttp 13573 140093994133184 code 400, message Bad request version (']*j(L\x18Æ`6\x87\x94\x13#dW\x19Q\x9b\x9f')
+ERROR 2025-04-14 01:35:37,683 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:37,684 basehttp 13573 140093994133184 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x1b\x00\x03\x02\x00\x02Di\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00')
+ERROR 2025-04-14 01:35:37,685 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:39,590 basehttp 13573 140093994133184 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93::\x00\x00\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00')
+ERROR 2025-04-14 01:35:39,590 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:39,592 basehttp 13573 140093994133184 code 400, message Bad request version ('òZÆÔ\x9e«D\x10êÔ§QLì¹#Æ\x19')
+ERROR 2025-04-14 01:35:39,594 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:39,596 basehttp 13573 140094002525888 code 400, message Bad request version ('q\x00')
+ERROR 2025-04-14 01:35:39,596 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:39,597 basehttp 13573 140094002525888 code 400, message Bad request version ('tÁSQ_hög\x86')
+ERROR 2025-04-14 01:35:39,598 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:40,762 basehttp 13573 140094002525888 code 400, message Bad request version ('\x8dÔÙ\x83\x9c')
+ERROR 2025-04-14 01:35:40,763 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:40,764 basehttp 13573 140094002525888 code 400, message Bad request version ('T\x10\x06\x06')
+ERROR 2025-04-14 01:35:40,765 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:40,767 basehttp 13573 140094002525888 code 400, message Bad request version ("u÷t\x02¨´=:2|Qª§\x937\x15¤°\x95'+Pz}!\x03b.¥uõánFÅ£µ\x9b\x95SÃU)¹")
+ERROR 2025-04-14 01:35:40,769 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:40,769 basehttp 13573 140093994133184 code 400, message Bad request version ('O\x84r:Á¼\x127ö\x9a\x08p')
+ERROR 2025-04-14 01:35:40,770 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,130 basehttp 13573 140093994133184 code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-04-14 01:35:41,130 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,131 basehttp 13573 140093994133184 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Õü£áF£´0h9ß\\\x80Ò½Üq\x80Æï§Ànw<å¦Óó°êã')
+ERROR 2025-04-14 01:35:41,132 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,137 basehttp 13573 140093994133184 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ºº\x00\x00\x00')
+ERROR 2025-04-14 01:35:41,138 basehttp 13573 140093994133184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,139 basehttp 13573 140094002525888 code 400, message Bad request version ('\x08ÕtÃÄ\x06\x07!Y\x88¼\x8b')
+ERROR 2025-04-14 01:35:41,141 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,141 basehttp 13573 140093780129472 code 400, message Bad request version ('n8!åË¼\x13ÑÏf·\x84"\x05ª\x0fg,\x17õ/O:/ô\'¿·\x94\x80ãÉo«q©9÷¤¿')
+ERROR 2025-04-14 01:35:41,143 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,147 basehttp 13573 140094002525888 code 400, message Bad request version ('ª\x9c\x81ý¥Ú<ô\x0fëç©\x03ãð')
+ERROR 2025-04-14 01:35:41,148 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,480 basehttp 13573 140094002525888 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03Þe«t«mú½]I°\x89\x99\x82P·$ÌÃ~\x1a(·XNET')
+ERROR 2025-04-14 01:35:41,480 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,482 basehttp 13573 140094002525888 code 400, message Bad request version ('ø')
+ERROR 2025-04-14 01:35:41,483 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,488 basehttp 13573 140094002525888 code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03ç'X¶ÖÑ§!\x8aA")
+ERROR 2025-04-14 01:35:41,489 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,490 basehttp 13573 140093780129472 code 400, message Bad request version ('\x00\x02\x01\x00\x003\x04ï\x04í')
+INFO 2025-04-14 01:35:41,495 basehttp 13573 140094002525888 code 400, message Bad request version ('\x8d@\x93\x7f\x00')
+ERROR 2025-04-14 01:35:41,495 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-04-14 01:35:41,500 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,514 basehttp 13573 140094002525888 code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063êê\x00\x00\x00-\x00\x02\x01\x01\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00\x1b\x00\x03\x02\x00\x02\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00\x12\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x17\x00\x00\x00')
+ERROR 2025-04-14 01:35:41,517 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,835 basehttp 13573 140094002525888 code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03hð|»=\x92\x9e\x1a0Áéí÷øti\x16`;ý½2¯>\x94\x81i}qî\x12')
+ERROR 2025-04-14 01:35:41,836 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,837 basehttp 13573 140094002525888 code 400, message Bad request version ('¸')
+ERROR 2025-04-14 01:35:41,838 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,843 basehttp 13573 140094002525888 code 400, message Bad request version ('.O\x8fÝîT½Öç\x15ap¢ÎU\x07\x9bs')
+INFO 2025-04-14 01:35:41,844 basehttp 13573 140093780129472 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03ÕWÿÅµ·\x18\x93«\x0e')
+ERROR 2025-04-14 01:35:41,844 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-04-14 01:35:41,844 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,847 basehttp 13573 140094002525888 code 400, message Bad request version ('eÄ\x7f\x14\x07\x84%k\x9fcjë\x05Z\x9c¨:0Ø\x9fsò\xad\x00')
+ERROR 2025-04-14 01:35:41,848 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:41,850 basehttp 13573 140093780129472 code 400, message Bad request version ('\x96s\x13')
+ERROR 2025-04-14 01:35:41,850 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:44,700 basehttp 13573 140093780129472 code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-04-14 01:35:44,701 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:44,702 basehttp 13573 140093780129472 code 400, message Bad request version ('LøÇ\x93')
+ERROR 2025-04-14 01:35:44,703 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:44,709 basehttp 13573 140093780129472 code 400, message Bad request version ('h±"\x9a\x00&\x00Ä\\\x0e\x92fèGás\x15\x90¯\x05Á¤+¼\x9f<ú\x18³}þ[\x9f}\x01ÞEñ\x8cl\x08Ú)¬\x15\x80ÿ\x8e\x95Ùë\x04\x7fh¹çÐã\x86õµ\x7f"\x95MY?\x04H!Û)Òö¥\x02')
+ERROR 2025-04-14 01:35:44,709 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:44,710 basehttp 13573 140094002525888 code 400, message Bad request version ('\x18m\x0fª')
+ERROR 2025-04-14 01:35:44,713 basehttp 13573 140094002525888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:44,714 basehttp 13573 140093780129472 code 400, message Bad request version ('\x8c=ü\x00#\x00\x00\x00\x17\x00\x00\x003\x04ï\x04íZZ\x00\x01\x00\x11ì\x04À8ò@\x10\x93nÙ¤')
+ERROR 2025-04-14 01:35:44,714 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:35:44,718 basehttp 13573 140093780129472 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-04-14 01:35:44,719 basehttp 13573 140093780129472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:36:52,273 autoreload 13573 140094110768000 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 01:36:53,177 autoreload 13751 140067321543552 Watching for file changes with StatReloader
+INFO 2025-04-14 01:37:50,261 autoreload 13751 140067321543552 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 01:37:51,137 autoreload 13796 140643732097920 Watching for file changes with StatReloader
+INFO 2025-04-14 01:37:55,823 basehttp 13796 140643623073472 code 400, message Bad request version ('g\x1a"\x00')
+ERROR 2025-04-14 01:37:55,824 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:55,825 basehttp 13796 140643614680768 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-04-14 01:37:55,825 basehttp 13796 140643614680768 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:55,827 basehttp 13796 140643614680768 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-04-14 01:37:55,828 basehttp 13796 140643614680768 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:55,828 basehttp 13796 140643623073472 code 400, message Bad request version ('\x8d`8\x9dÒhTpê\x04')
+ERROR 2025-04-14 01:37:55,828 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:59,805 basehttp 13796 140643623073472 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+ERROR 2025-04-14 01:37:59,806 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:59,807 basehttp 13796 140643623073472 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-04-14 01:37:59,807 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:59,820 basehttp 13796 140643614680768 code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03õb[')
+ERROR 2025-04-14 01:37:59,820 basehttp 13796 140643614680768 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:59,821 basehttp 13796 140643623073472 code 400, message Bad request version ('\x02h2\x08http/1.1\x003\x04ï\x04í')
+ERROR 2025-04-14 01:37:59,824 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:59,823 basehttp 13796 140643401725632 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-04-14 01:37:59,825 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:37:59,828 basehttp 13796 140643401725632 code 400, message Bad request version ('\\²')
+ERROR 2025-04-14 01:37:59,828 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:00,689 basehttp 13796 140643401725632 code 400, message Bad request version ('\x9dæ1ÝlÆÂG\x9d\x9c\x82ií')
+ERROR 2025-04-14 01:38:00,689 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:00,691 basehttp 13796 140643401725632 code 400, message Bad request version ('È\x0ee¥')
+ERROR 2025-04-14 01:38:00,691 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:00,696 basehttp 13796 140643401725632 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-04-14 01:38:00,696 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:00,696 basehttp 13796 140643623073472 code 400, message Bad request version ('\x00')
+ERROR 2025-04-14 01:38:00,697 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:00,698 basehttp 13796 140643401725632 code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063úú\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-04-14 01:38:00,698 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:00,701 basehttp 13796 140643623073472 code 400, message Bad request version ('7Ûg8=g\x07{1ûòrFÅK\x8bÚ\x99¨¹ê')
+ERROR 2025-04-14 01:38:00,701 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,270 basehttp 13796 140643623073472 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03fMá=|=')
+ERROR 2025-04-14 01:38:01,270 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,272 basehttp 13796 140643623073472 code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-04-14 01:38:01,272 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,276 basehttp 13796 140643623073472 code 400, message Bad request version ('ÞYXlBZ\x8d\x80\x90Ã·\x07½þÄÛ7|:QQkÓc\x90©A\x19^')
+ERROR 2025-04-14 01:38:01,277 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,277 basehttp 13796 140643401725632 code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sêê\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-04-14 01:38:01,278 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,278 basehttp 13796 140643623073472 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+ERROR 2025-04-14 01:38:01,279 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,281 basehttp 13796 140643623073472 code 400, message Bad request version ('µGF\x98Û')
+ERROR 2025-04-14 01:38:01,282 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,662 basehttp 13796 140643623073472 code 400, message Bad request version ('\x00\x02\x01\x00\x003\x04ï\x04í**\x00\x01\x00\x11ì\x04ÀCQ')
+ERROR 2025-04-14 01:38:01,662 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,664 basehttp 13796 140643623073472 code 400, message Bad request version ('oÖ')
+ERROR 2025-04-14 01:38:01,665 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,671 basehttp 13796 140643623073472 code 400, message Bad request version ('K¹')
+ERROR 2025-04-14 01:38:01,671 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:01,672 basehttp 13796 140643623073472 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x003\x04ï\x04í')
+ERROR 2025-04-14 01:38:01,673 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:02,028 basehttp 13796 140643623073472 code 400, message Bad request version ('\x02h2\x08http/1.1\x003\x04ï\x04íºº\x00\x01\x00\x11ì\x04À*\x05')
+ERROR 2025-04-14 01:38:02,029 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:02,030 basehttp 13796 140643623073472 code 400, message Bad request version ('qÍ@óUw\x80<Þÿ»ìÇq\x97rì3EùQH¢Ü\x8f=8µ=T\x0fûæ\x14\x90z')
+ERROR 2025-04-14 01:38:02,031 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:02,031 basehttp 13796 140643401725632 code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S**\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-04-14 01:38:02,034 basehttp 13796 140643401725632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:02,035 basehttp 13796 140643623073472 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03L')
+ERROR 2025-04-14 01:38:02,035 basehttp 13796 140643623073472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-14 01:38:13,809 autoreload 13796 140643732097920 /home/artemix/PROGRAMMING-LEARNING/PYTHON-LEARNING/Django_Projects/DCI/dci_backend/settings.py changed, reloading.
+INFO 2025-04-14 01:38:14,698 autoreload 13859 140075791952768 Watching for file changes with StatReloader
+INFO 2025-04-14 01:38:41,891 autoreload 13874 140714676661120 Watching for file changes with StatReloader
+WARNING 2025-04-14 09:20:21,799 handlers 13901 140040683644608 Permission denied in UtilisateurViewSet: Cette action est réservée aux administrateurs.
+WARNING 2025-04-14 10:38:29,723 handlers 21691 140581907031744 Permission denied in UtilisateurViewSet: Cette action est réservée aux administrateurs.

@@ -1,0 +1,25 @@
+Django==5.2                    # Framework principal
+djangorestframework==3.15.2    # API REST
+asgiref==3.8.1                 # Support ASGI
+psycopg2-binary==2.9.10        # Adaptateur PostgreSQL
+python-dotenv==1.1.0           # Variables d'environnement
+whitenoise==6.9.0              # Fichiers statiques
+gunicorn==23.0.0               # Serveur WSGI
+uvicorn==0.30.1                # Serveur ASGI (optionnel pour Django Channels)
+argon2-cffi            # Hashing moderne (pour les mots de passe)
+djangorestframework-simplejwt==5.5.0  # Authentification JWT
+django-cors-headers==4.7.0     # Gestion CORS (si API frontend)
+pyOpenSSL==25.0.0              # Chiffrement TLS
+sentry-sdk             # Surveillance des erreurs (Sentry)
+django-redis==5.4.0            # Cache Redis
+redis==5.2.1                   # Client Redis
+django-prometheus==2.3.1       # Métriques de monitoring
+drf-spectacular==0.28.0        # Documentation OpenAPI 3
+django-filter==25.1            # Filtres avancés pour API
+celery==5.4.0                  # Tâches asynchrones (si besoin)
+cryptography==44.0.2           # Chiffrement avancé
+python-dateutil==2.9.0.post0   # Manipulation des dates
+dj-database-url==2.3.0         # Configuration DB via URL
+django-health-check==3.18.3    # Endpoints de santé
+django-storages==1.14.2        # Stockage cloud (S3, etc.)
+pytest==8.3.5                  # Tests (à inclure en dev seulement)
