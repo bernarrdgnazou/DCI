@@ -3,14 +3,6 @@ from datetime import timedelta
 import os
 
 
-SECURE_SSL_REDIRECT = True  
-SECURE_HSTS_SECONDS = 31536000  # 1 an
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_PRELOAD = True
-SECURE_BROWSER_XSS_FILTER = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
-
-
 # Chemins de base
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOGS_DIR = BASE_DIR / 'logs'
@@ -164,6 +156,8 @@ USE_TZ = True
 # Fichiers statiques
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Fichiers média
 MEDIA_URL = '/media/'
@@ -275,7 +269,7 @@ CORS_ALLOW_HEADERS = [
 
 
 
-
+ALLOWED_HOSTS = ['dci-api.onrender.com', 'localhost']
 
 
 
