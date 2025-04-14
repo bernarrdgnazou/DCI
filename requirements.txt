@@ -23,4 +23,3 @@ dj-database-url==2.3.0         # Configuration DB via URL
 django-health-check==3.18.3    # Endpoints de santé
 django-storages==1.14.2        # Stockage cloud (S3, etc.)
 pytest==8.3.5                  # Tests (à inclure en dev seulement)
-dj-database-url
