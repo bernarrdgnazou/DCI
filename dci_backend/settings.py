@@ -21,7 +21,7 @@ SECRET_KEY = 'django-insecure-@50kx5=5&rp$jm@tz8b)%)8$@-6z7bp!usz#lzjcp+p7xi01-q
 DEBUG = False
 
 # Hôtes autorisés (à configurer pour la production)
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dci-api.onrender.com']
 
 # Configuration des applications
 INSTALLED_APPS = [
