@@ -812,3 +812,4 @@ INFO 2025-04-14 01:38:14,698 autoreload 13859 140075791952768 Watching for file 
 INFO 2025-04-14 01:38:41,891 autoreload 13874 140714676661120 Watching for file changes with StatReloader
 WARNING 2025-04-14 09:20:21,799 handlers 13901 140040683644608 Permission denied in UtilisateurViewSet: Cette action est réservée aux administrateurs.
 WARNING 2025-04-14 10:38:29,723 handlers 21691 140581907031744 Permission denied in UtilisateurViewSet: Cette action est réservée aux administrateurs.
+INFO 2025-04-14 13:44:25,679 autoreload 35532 140259708025728 Watching for file changes with StatReloader

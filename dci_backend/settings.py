@@ -120,16 +120,51 @@ TEMPLATES = [
 WSGI_APPLICATION = 'dci_backend.wsgi.application'
 
 # Configuration de la base de données PostgreSQL
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dci_db',  # Nom de la base de données
-        'USER': 'dci_admin',  # Utilisateur PostgreSQL
-        'PASSWORD': 'dci_pass',  # Mot de passe PostgreSQL
-        'HOST': 'localhost',  # Hôte de la base de données
-        'PORT': '5432',  # Port PostgreSQL
+# Détection environnement Render
+IS_RENDER = os.getenv('RENDER', 'false').lower() == 'true'
+
+# Configuration des bases de données
+if IS_RENDER:
+    # Configuration pour Render
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'dci_db',
+            'USER': 'dci_db_user',
+            'PASSWORD': 'SuWYmqUVWXSzRiS9IsdxuTl94Qsauthb',
+            'HOST': 'dpg-cvuf4gq4d50c73au9c3g-a.oregon-postgres.render.com',
+            'PORT': '5432',
+            'OPTIONS': {
+                'sslmode': 'require',  # Obligatoire pour Render
+                'connect_timeout': 5    # Timeout réduit
+            }
+        }
     }
-}
+else:
+    # Configuration locale
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'dci_db',
+            'USER': 'dci_admin',
+            'PASSWORD': 'dci_pass',
+            'HOST': 'localhost',
+            'PORT': '5432'
+        }
+    }
+
+
+# Autres configurations spécifiques à Render
+if IS_RENDER:
+    DEBUG = False
+    ALLOWED_HOSTS = ['votre-nom-service.onrender.com']
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+else:
+    DEBUG = True
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
+
 
 # Validation des mots de passe
 AUTH_PASSWORD_VALIDATORS = [
