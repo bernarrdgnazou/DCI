@@ -38,18 +38,12 @@ MarkupSafe==3.0.2
 mdurl==0.1.2
 packaging==24.2
 pillow==11.2.1
-<<<<<<< HEAD
-=======
 pip==25.0.1
->>>>>>> cf331543b9ebb628ad26ef3bea24f45b911d48e1
 prometheus_client==0.21.1
 psycopg2-binary==2.9.10
 pycparser==2.22
 PyJWT==2.9.0
-<<<<<<< HEAD
-=======
 pyOpenSSL==25.0.0
->>>>>>> cf331543b9ebb628ad26ef3bea24f45b911d48e1
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 python-slugify==8.0.4
