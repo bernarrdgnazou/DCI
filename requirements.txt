@@ -1,25 +1,149 @@
-Django==5.2                    # Framework principal
-djangorestframework==3.15.2    # API REST
-asgiref==3.8.1                 # Support ASGI
-psycopg2-binary==2.9.10        # Adaptateur PostgreSQL
-python-dotenv==1.1.0           # Variables d'environnement
-whitenoise==6.9.0              # Fichiers statiques
-gunicorn==23.0.0               # Serveur WSGI
-uvicorn==0.30.1                # Serveur ASGI (optionnel pour Django Channels)
-argon2-cffi==23.1.0           # Hashing moderne (pour les mots de passe)
-djangorestframework-simplejwt==5.5.0  # Authentification JWT
-django-cors-headers==4.7.0     # Gestion CORS (si API frontend)
-pyOpenSSL==25.0.0              # Chiffrement TLS
-sentry-sdk==1.45.0             # Surveillance des erreurs (Sentry)
-django-redis==5.4.0            # Cache Redis
-redis==5.2.1                   # Client Redis
-django-prometheus==2.3.1       # Métriques de monitoring
-drf-spectacular==0.28.0        # Documentation OpenAPI 3
-django-filter==25.1            # Filtres avancés pour API
-celery==5.4.0                  # Tâches asynchrones (si besoin)
-cryptography==44.0.2           # Chiffrement avancé
-python-dateutil==2.9.0.post0   # Manipulation des dates
-dj-database-url==2.3.0         # Configuration DB via URL
-django-health-check==3.18.3    # Endpoints de santé
-django-storages==1.14.2        # Stockage cloud (S3, etc.)
-pytest==8.3.5                  # Tests (à inclure en dev seulement)
+aniso8601==7.0.0
+argon2==0.1.10
+asgiref==3.8.1
+asttokens==3.0.0
+attrs==25.1.0
+babel==2.17.0
+bandit==1.8.3
+blinker==1.9.0
+certifi==2025.1.31
+cffi==1.17.1
+charset-normalizer==3.4.1
+click==8.1.8
+colorama==0.4.6
+comm==0.2.2
+coverage==7.6.12
+cryptography==44.0.2
+dateparser==1.2.1
+debugpy==1.8.11
+decorator==5.1.1
+defusedxml==0.7.1
+dj-database-url==2.3.0
+Django==5.2
+django-admin-interface==0.29.4
+django-colorfield==0.12.0
+django-cors-headers==4.7.0
+django-debug-toolbar==5.1.0
+django-extensions==3.2.3
+django-filter==25.1
+django-health-check==3.18.3
+django-prometheus==2.3.1
+django-ratelimit==4.1.0
+django-redis==5.4.0
+djangorestframework==3.15.2
+djangorestframework_simplejwt==5.5.0
+dnspython==2.7.0
+dotenv==0.9.9
+dparse==0.6.4
+drf-spectacular==0.28.0
+drf-yasg==1.21.10
+executing==2.1.0
+factory_boy==3.3.3
+Faker==37.0.0
+flake8==7.1.2
+Flask==3.1.0
+flask-babel==4.0.0
+graphene==2.1.9
+graphql-core==2.3.2
+graphql-relay==2.0.1
+greenlet==3.1.1
+gunicorn==23.0.0
+h11==0.14.0
+idna==3.10
+inflection==0.5.1
+iniconfig==2.0.0
+ipykernel==6.29.5
+ipython==8.30.0
+itsdangerous==2.2.0
+jedi==0.19.2
+jet-bridge-base==1.11.15
+jet-django==1.11.15
+Jinja2==3.1.6
+jsonschema==4.23.0
+jsonschema-specifications==2024.10.1
+jupyter_client==8.6.3
+jupyter_core==5.7.2
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+matplotlib-inline==0.1.7
+mccabe==0.7.0
+mdurl==0.1.2
+nest-asyncio==1.6.0
+oauthlib==3.2.2
+outcome==1.3.0.post0
+packaging==21.3
+parso==0.8.4
+pbr==6.1.1
+pexpect==4.9.0
+pillow==11.1.0
+platformdirs==4.3.6
+pluggy==1.5.0
+prometheus_client==0.21.1
+promise==2.3
+prompt_toolkit==3.0.48
+psutil==6.1.0
+psycopg2-binary==2.9.10
+ptyprocess==0.7.0
+pure_eval==0.2.3
+pycodestyle==2.12.1
+pycparser==2.22
+pyflakes==3.2.0
+Pygments==2.18.0
+PyJWT==2.9.0
+pymongo==4.1.1
+pyOpenSSL==25.0.0
+pyparsing==3.2.3
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.16
+PyQt5_sip==12.17.0
+PySocks==1.7.1
+pytest==8.3.5
+pytest-cov==6.0.0
+pytest-django==4.10.0
+python-dateutil==2.9.0.post0
+python-dotenv==1.1.0
+python-http-client==3.3.7
+python-slugify==8.0.4
+python3-openid==3.2.0
+pytz==2025.2
+PyYAML==6.0.2
+pyzmq==26.2.0
+redis==5.2.1
+referencing==0.36.2
+regex==2024.11.6
+requests==2.32.3
+requests-oauthlib==2.0.0
+rich==13.9.3
+rpds-py==0.23.1
+ruamel.yaml==0.18.10
+ruamel.yaml.clib==0.2.12
+Rx==1.6.3
+safety==2.3.5
+selenium==4.28.1
+setuptools==78.1.0
+six==1.17.0
+sniffio==1.3.1
+social-auth-core==4.5.6
+sortedcontainers==2.4.0
+SQLAlchemy==1.4.54
+sqlparse==0.5.3
+stack-data==0.6.3
+starkbank-ecdsa==2.2.0
+stevedore==5.4.1
+text-unidecode==1.3
+tornado==6.4.2
+traitlets==5.14.3
+trio==0.28.0
+trio-websocket==0.11.1
+typing_extensions==4.12.2
+tzdata==2025.1
+tzlocal==5.3.1
+undetected-chromedriver==3.5.5
+uritemplate==4.1.1
+urllib3==2.3.0
+wcwidth==0.2.13
+websocket-client==1.8.0
+websockets==14.2
+Werkzeug==3.1.3
+whitenoise==6.9.0
+wsproto==1.2.0
