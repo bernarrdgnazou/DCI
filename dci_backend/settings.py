@@ -152,7 +152,7 @@ else:
 
 # Autres configurations spécifiques à Render
 if IS_RENDER:
-    DEBUG = False
+    DEBUG = True
     ALLOWED_HOSTS = ['dci-api.onrender.com']
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -280,6 +280,7 @@ AUTH_USER_MODEL = 'api.Utilisateur'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",          # Dev
+    "https://dci-api.onrender.com",
     "https://votre-app-react.com",    # Prod
 ]
 
