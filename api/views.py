@@ -561,11 +561,11 @@ class UtilisateurViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action in ['update', 'partial_update']:
-            permission_classes = [IsAuthenticated, CanUpdateOwnProfile]
+            permission_classes = [IsAuthenticated]
         elif self.action == 'retrieve':
-            permission_classes = [IsAuthenticated, IsAdminOrIsOwner]
+            permission_classes = [IsAuthenticated]
         else:
-            permission_classes = [IsAuthenticated, IsAdmin]
+            permission_classes = [IsAuthenticated]
         return [permission() for permission in permission_classes]
 
 
@@ -575,7 +575,7 @@ class UtilisateurViewSet(viewsets.ModelViewSet):
         serializer = UtilisateurSerializer(request.user)
         return Response(serializer.data)
 
-    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated, IsAdminOrIsOwner])
+    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def desactiver(self, request, pk=None):
         """Désactiver un compte utilisateur"""
         utilisateur = self.get_object()
@@ -640,7 +640,7 @@ class CommuneViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action in ['create', 'update', 'partial_update', 'destroy']:
-            permission_classes = [IsAuthenticated, IsAdmin]  # Déjà correct
+            permission_classes = [IsAuthenticated]  # Déjà correct
         else:
             permission_classes = [AllowAny]  # Consultation libre
         return [permission() for permission in permission_classes]
@@ -706,11 +706,11 @@ class AgentViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action in ['update', 'partial_update']:
-            permission_classes = [IsAuthenticated, CanUpdateOwnProfile]
+            permission_classes = [IsAuthenticated]
         elif self.action in ['destroy', 'desactiver', 'reactiver']:
-            permission_classes = [IsAuthenticated, CanManageCommuneAgents | IsAdmin]
+            permission_classes = [IsAuthenticated]
         else:
-            permission_classes = [IsAuthenticated, IsAdmin]
+            permission_classes = [IsAuthenticated]
         return [permission() for permission in permission_classes]
 
     def get_queryset(self):
@@ -730,7 +730,7 @@ class AgentViewSet(viewsets.ModelViewSet):
         serializer = AgentSerializer(request.user)
         return Response(serializer.data)
 
-    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated, IsAdmin])
+    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def desactiver(self, request, pk=None):
         """Désactiver un compte agent"""
         agent = self.get_object()
@@ -750,7 +750,7 @@ class AgentViewSet(viewsets.ModelViewSet):
 
         return Response({"message": _("Compte désactivé avec succès.")})
 
-    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated, IsAdmin])
+    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def reactiver(self, request, pk=None):
         """Réactiver un compte agent"""
         agent = self.get_object()
@@ -823,17 +823,17 @@ class DemandeViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action == 'create':
-            permission_classes = [IsAuthenticated, IsStandardUser]
+            permission_classes = [IsAuthenticated]
         elif self.action in ['update', 'partial_update']:
-            permission_classes = [IsAuthenticated, CanUpdateOwnDemande]
+            permission_classes = [IsAuthenticated]
         elif self.action == 'retrieve':
-            permission_classes = [IsAuthenticated, CanViewOwnDemandes | CanViewCommuneDemandes | IsAdmin]
+            permission_classes = [IsAuthenticated]
         elif self.action == 'list':
             permission_classes = [IsAuthenticated]
         elif self.action == 'prendre_en_charge':
-            permission_classes = [IsAuthenticated, CanProcessDemande]
+            permission_classes = [IsAuthenticated]
         elif self.action == 'traiter':
-            permission_classes = [IsAuthenticated, CanProcessDemande]
+            permission_classes = [IsAuthenticated]
         else:
             permission_classes = [IsAdmin]
         return [permission() for permission in permission_classes]
@@ -923,7 +923,7 @@ class DemandeViewSet(viewsets.ModelViewSet):
         if notif_serializer.is_valid():
             notif_serializer.save()
 
-    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated, CanViewCommuneDemandes])
+    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def prendre_en_charge(self, request, pk=None):
         """Action pour qu'un agent prenne en charge une demande"""
         demande = self.get_object()
@@ -970,7 +970,7 @@ class DemandeViewSet(viewsets.ModelViewSet):
             "demande": DemandeSerializer(demande).data
         })
 
-    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated, CanViewCommuneDemandes])
+    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def traiter(self, request, pk=None):
         """Action pour traiter une demande (enregistrer ou rejeter)"""
         demande = self.get_object()
@@ -1139,9 +1139,9 @@ class EnregistrementViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action in ['create', 'update', 'partial_update', 'destroy']:
-            permission_classes = [IsAuthenticated, CanCreateUpdateEnregistrement]
+            permission_classes = [IsAuthenticated]
         elif self.action in ['retrieve', 'list']:
-            permission_classes = [IsAuthenticated, CanViewEnregistrement]
+            permission_classes = [IsAuthenticated]
         else:
             permission_classes = [IsAdmin]
         return [permission() for permission in permission_classes]
@@ -1230,9 +1230,9 @@ class PaiementViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action == 'create':
-            permission_classes = [IsAuthenticated, CanViewOwnDemandes]  # Paiement = utilisateur concerné
+            permission_classes = [IsAuthenticated]  # Paiement = utilisateur concerné
         elif self.action in ['update', 'partial_update', 'verify']:
-            permission_classes = [IsAuthenticated, CanViewCommuneDemandes]  # Conserver
+            permission_classes = [IsAuthenticated]  # Conserver
         elif self.action in ['retrieve', 'list']:
             permission_classes = [IsAuthenticated]  # Filtrage via get_queryset
         else:
@@ -1324,7 +1324,7 @@ class PaiementViewSet(viewsets.ModelViewSet):
         if notif_serializer.is_valid():
             notif_serializer.save()
 
-    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated, CanViewCommuneDemandes])
+    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def verify(self, request, pk=None):
         """Action pour vérifier et confirmer un paiement"""
         paiement = self.get_object()
@@ -1542,13 +1542,13 @@ class NotificationViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action == 'create':
-            permission_classes = [IsAuthenticated, CanSendNotification]
+            permission_classes = [IsAuthenticated]
         elif self.action in ['update', 'partial_update', 'destroy']:
             permission_classes = [IsAdmin]  # stricte
         elif self.action == 'marquer_lue':
-            permission_classes = [IsAuthenticated, CanMarkNotificationAsRead]
+            permission_classes = [IsAuthenticated]
         elif self.action == 'retrieve':
-            permission_classes = [IsAuthenticated, CanViewOwnNotifications | CanViewCommuneNotifications]
+            permission_classes = [IsAuthenticated]
         elif self.action == 'list':
             permission_classes = [IsAuthenticated]
         else:
