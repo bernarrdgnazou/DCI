@@ -18,7 +18,7 @@ LOGS_DIR = BASE_DIR / 'logs'
 SECRET_KEY = 'django-insecure-@50kx5=5&rp$jm@tz8b)%)8$@-6z7bp!usz#lzjcp+p7xi01-q'
 
 # Mode debug (à désactiver en production)
-DEBUG = False
+DEBUG = True
 
 # Configuration des applications
 INSTALLED_APPS = [
